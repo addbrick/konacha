@@ -12,5 +12,11 @@
       <%= content_tag :iframe, "", :src => iframe_path(spec.asset_name), :class => "test-context", "data-path" => spec.path %>
     <% end %>
     <div id="mocha"></div>
+
+    <%= render 'spaces/shared/templates' %>
+
+    <div id="templates">
+      <%= yield :templates %>
+    </div>
   </body>
 </html>

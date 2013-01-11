@@ -13,5 +13,10 @@
     <%= javascript_include_tag @spec.asset_name %>
   </head>
   <body>
+    <%= render 'spaces/shared/templates' %>
+
+    <div id="templates">
+      <%= yield :templates %>
+    </div>
   </body>
 </html>
